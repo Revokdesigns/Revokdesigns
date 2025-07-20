@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revok Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+      flex: 1;
+    }
+
+    nav {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .hero {
+      background: lightgray;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .services,
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .contact {
+      background-color: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        margin-bottom: 10px;
+      }
+
+      nav {
+        text-align: left;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 10px 5px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 60px 15px;
+      }
+
+      .hero h2 {
+        font-size: 22px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Revok Designs</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Creative. Unique. Bold.</h2>
+    <p>Your Vision, Our Design.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width: 800px; margin:auto;">
+      Revok Designs is a creative design studio specializing in branding, logo design, Poster Design, and digital art. We turn ideas into visually compelling creations that elevate your brand identity.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Crafting unique logos that define your brand's personality.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Posts</h3>
+        <p>Eye-catching designs tailored for Instagram & Facebook.</p>
+      </div>
+      <div class="card">
+        <h3>Poster designs</h3>
+        <p>Bold, creative visual that make your brand stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="REVOK DESIGNS NEW LOGO.jpg" alt="Project 1">
+        <h3>Logo Designs</h3>
+      </div>
+      <div class="card">
+        <img src="REVOK DESIGNS NEW LOGO.jpg" alt="Project 2">
+        <h3>Social Media Posts</h3>
+      </div>
+      <div class="card">
+        <img src="REVOK DESIGNS NEW LOGO.jpg" alt="Project 3">
+        <h3>Poster Design</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:revokdesigns2025@gmail.com">revokdesigns2025@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/revok_designs_/?utm_source=ig_web_button_share_sheet" target="_blank">@revok_designs</a></p>
+      <p>Phone: +91 75609 48414</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 Revok Designs. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
